@@ -1,0 +1,21 @@
+<configuration>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+    <appender name="FILE-APPENDER" class="ch.qos.logback.core.ConsoleAppender">
+        <file>C:/Users/jainh/Downloads/</file>
+    </appender>
+    <logger name="Controller.SimpleController" level="debug">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+
+    <root level="Info">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+</configuration>
